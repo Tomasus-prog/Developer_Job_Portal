@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS education_details;
+DROP TABLE IF EXISTS experience_details;
+DROP TABLE IF EXISTS developer_skill;
+DROP TABLE IF EXISTS job_ad_skill;
+DROP TABLE IF EXISTS skill_set;
+DROP TABLE IF EXISTS job_ad;
+DROP TABLE IF EXISTS job_type;
+DROP TABLE IF EXISTS developer_profile_activity;
+DROP TABLE IF EXISTS company;
+DROP TABLE IF EXISTS developer_profile;
+DROP TABLE IF EXISTS profile_image;
+DROP TABLE IF EXISTS user_account;
+DROP TABLE IF EXISTS user_type;
