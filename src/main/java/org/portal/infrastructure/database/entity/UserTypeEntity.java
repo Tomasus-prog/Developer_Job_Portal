@@ -1,9 +1,10 @@
 package org.portal.infrastructure.database.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.*;
-
-import java.util.Set;
 
 @Getter
 @Setter
@@ -12,8 +13,8 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table(name = "user_type")
+//@Entity
+//@Table(name = "user_type")
 public class UserTypeEntity{
 
             @Id
@@ -24,7 +25,7 @@ public class UserTypeEntity{
             @Column(name="user_type_name")
             private String userTypeName;
 
-            @OneToMany(fetch = FetchType.LAZY,mappedBy = "userType")
-            private Set<UserAccountEntity> userAccounts;
+//            @OneToMany(fetch = FetchType.LAZY,mappedBy = "userType")
+//            private Set<UserAccountEntity> userAccounts;
 
 }

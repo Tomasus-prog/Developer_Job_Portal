@@ -29,6 +29,8 @@ public class CompanyEntity {
     private String website;
     @Column(name = "industry")
     private String industry;
+    @Column(name = "description")
+    private String description;
 
 
     @OneToOne(fetch = FetchType.LAZY)
