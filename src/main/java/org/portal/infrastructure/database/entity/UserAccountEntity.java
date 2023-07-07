@@ -28,9 +28,13 @@ public class UserAccountEntity {
     @Column(name = "password")
     private String password;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_type_id")
-    private UserTypeEntity userType;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "user_type")
+    private UserType userType;
+
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "user_type_id")
+//    private UserTypeEntity userType;
 
     @OneToOne(fetch = FetchType.LAZY, mappedBy = "userAccount")
     private CompanyEntity company;

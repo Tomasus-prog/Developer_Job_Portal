@@ -9,8 +9,6 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
-
-import static org.junit.jupiter.api.Assertions.*;
 @Slf4j
 @Testcontainers
 @SpringJUnitConfig(classes = {ApplicationConfiguration.class})
@@ -27,4 +25,5 @@ class MainTest {
     void main() {
 
     }
+
 }
